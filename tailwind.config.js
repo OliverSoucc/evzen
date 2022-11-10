@@ -19,6 +19,7 @@ module.exports = {
       },
       borderColor: {
         primary: '#2C2C2C',
+        secondary: '#A9A8A8',
       },
       screens: {
         desktop: '1920px',
