@@ -1,4 +1,4 @@
-import { Card, Contact, Navbar, Service } from '../components/common';
+import { Card, Contact, Service } from '../components/common';
 import { Button } from '../components/ui';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,7 +12,6 @@ import {
   MapPointerIcon,
 } from '../components/icons';
 import Email from '../components/icons/Email';
-import Footer from '../components/common/Footer/Footer';
 import PastPojectsSwiper from '../components/swiper/PastProjectsSwiper/PastPojectsSwiper';
 
 const Home = () => {
