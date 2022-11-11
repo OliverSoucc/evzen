@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { Burger } from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useScrollLock } from '@mantine/hooks';
 
 const Navbar = () => {
   const [opened, setOpened] = useState(false);
+  const [scrollLocked, setScrollLocked] = useScrollLock(false);
   return (
     <nav className={`bg-primary w-full ${opened && 'h-screen'}`}>
       <div
@@ -41,7 +43,10 @@ const Navbar = () => {
         <Burger
           opened={opened}
           color={'#ffffff'}
-          onClick={() => setOpened((o) => !o)}
+          onClick={() => {
+            setOpened((o) => !o);
+            setScrollLocked((o) => !o);
+          }}
         />
       </div>
       {opened && (

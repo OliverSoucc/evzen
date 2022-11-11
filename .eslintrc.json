@@ -2,7 +2,8 @@
 {
   "extends": ["plugin:storybook/recommended","next/core-web-vitals", "next", "eslint:recommended"],
   "globals": {
-    "React": "readonly"
+    "React": "readonly",
+    "JSX": true
   },
   "overrides": [
     {

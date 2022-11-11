@@ -2,6 +2,7 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import * as NextImage from 'next/image';
 import '../styles/globals.css';
+import 'swiper/css';
 import { Canvas, Meta } from '@storybook/addon-docs';
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -46,7 +47,7 @@ export const parameters = {
     },
   },
   backgrounds: {
-    default: 'white',
+    default: 'black',
     values: [
       {
         name: 'white',
