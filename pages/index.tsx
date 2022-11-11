@@ -12,7 +12,7 @@ import {
   MapPointerIcon,
 } from '../components/icons';
 import Email from '../components/icons/Email';
-import PastPojectsSwiper from '../components/swiper/PastProjectsSwiper/PastPojectsSwiper';
+import PastPojectsSwiper from '../components/swiper/PastProjectsSwiper';
 
 const Home = () => {
   return (
